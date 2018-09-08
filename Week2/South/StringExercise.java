@@ -1,4 +1,4 @@
-
+package PPL_Fall2018.Week2.South;
 
 import java.util.Scanner;;
 
@@ -26,8 +26,7 @@ public class StringExercise {
 
 		System.out.println("KÃ­ tá»± Ä‘áº§u tiÃªn cá»§a chuá»—i lÃ : " + str.charAt(0));
 
-		// 4
-
+		//5
 		int letterCount = 0;
 		int digitCount = 0;
 		int wordCount = 0;
@@ -70,5 +69,7 @@ public class StringExercise {
 
 		}
 
+		//8
+		String 
 	}
 }
