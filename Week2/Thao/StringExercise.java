@@ -1,4 +1,4 @@
-package thao;
+package PPL_Fall2018.Week2.;
 
 import java.util.Scanner;;
 
@@ -8,9 +8,9 @@ public class StringExercise {
 		Scanner sc = new Scanner(System.in);
 
 		/*
-		 * System.out.println("Nhập họ và tên: "); String fullname = sc.nextLine();
+		 * System.out.println("Nháº­p há»� vÃ  tÃªn: "); String fullname = sc.nextLine();
 		 * 
-		 * System.out.println("Nhập tên: "); String name = sc.nextLine();
+		 * System.out.println("Nháº­p tÃªn: "); String name = sc.nextLine();
 		 * 
 		 * if (fullname.contains(name)) { System.out.println("True"); } else {
 		 * System.out.println("Not found"); }
@@ -18,9 +18,9 @@ public class StringExercise {
 
 		// 3
 		/*
-		 * System.out.println("Nhập một chuỗi bất kì: "); String str = sc.nextLine();
+		 * System.out.println("Nháº­p má»™t chuá»—i báº¥t kÃ¬: "); String str = sc.nextLine();
 		 * 
-		 * System.out.println("Kí tự đầu tiên của chuỗi là: " + str.charAt(0));
+		 * System.out.println("KÃ­ tá»± Ä‘áº§u tiÃªn cá»§a chuá»—i lÃ : " + str.charAt(0));
 		 */
 
 		// 4
@@ -28,7 +28,7 @@ public class StringExercise {
 		int digitCount = 0;
 		int wordCount = 0;
 
-		System.out.println("Nhập chuỗi bất kì: ");
+		System.out.println("Nháº­p chuá»—i báº¥t kÃ¬: ");
 		String ch = sc.nextLine();
 
 		for (int i = 0; i < ch.length(); i++) {
@@ -39,21 +39,21 @@ public class StringExercise {
 			if(ch.charAt(i) == ' ' && ch.charAt(i+1) != ' ')
 				wordCount++;
 		}
-		System.out.println("Số chữ cái là: "+ letterCount);
-		System.out.println("Số chữ số là: " + digitCount);
-		System.out.println("Số từ là: "+ (wordCount + 1));*/
+		System.out.println("Sá»‘ chá»¯ cÃ¡i lÃ : "+ letterCount);
+		System.out.println("Sá»‘ chá»¯ sá»‘ lÃ : " + digitCount);
+		System.out.println("Sá»‘ tá»« lÃ : "+ (wordCount + 1));*/
 	
 		//6
 		/*int max = 0;
 		int dem = 0;
 		
-		System.out.println("Nhập chuỗi bất kì: ");
+		System.out.println("Nháº­p chuá»—i báº¥t kÃ¬: ");
 		String a = sc.nextLine();
 		for(int i =0; i < a.length(); i++) {
 		}*/
 		
 		//7
-		System.out.println("Nhập vào chuỗi bất kì: ");
+		System.out.println("Nháº­p vÃ o chuá»—i báº¥t kÃ¬: ");
 		String b = sc.nextLine();
 		
 		
