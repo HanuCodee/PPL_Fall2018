@@ -1,4 +1,4 @@
-package day2;
+package PPL_Fall2018.Week2.Hoapt;
 
 import java.util.Scanner;
 
@@ -7,7 +7,7 @@ public class ex5 {
 		Scanner hoa = new Scanner(System.in);
 		System.out.println("Please enter anything you want!!!");
 		String a = hoa.nextLine();
-		// chuyển string về dạng array
+		// chuyá»ƒn string vá»� dáº¡ng array
 		char[] ch = a.toCharArray();
 		int letter = 0;
 		int space = 0;

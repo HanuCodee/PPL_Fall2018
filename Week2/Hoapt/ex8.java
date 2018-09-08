@@ -1,4 +1,4 @@
-package day2;
+package PPL_Fall2018.Week2.Hoapt;
 
 import java.util.Scanner;
 
@@ -10,6 +10,11 @@ public class ex8 {
 		String a = hoa.nextLine();
 		char[] ch = a.toCharArray();
 		removeItem(a, string);
+		
+	}
+
+	private static void removeItem(String a, String string) {
+		// TODO Auto-generated method stub
 		
 	}
 

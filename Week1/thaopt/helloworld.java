@@ -1,12 +1,14 @@
+package PPL_Fall2018.Week1.thaopt;
+
 public class helloworld{
 	public static void main (String[] args){
 		isPrime1(3);
 	}
 
-	public boolean isPrime1(int n) {
+	public static boolean isPrime1(int n) {
 		for (int x = 2; x < Math.sqrt(n); x++) {
 			if (n % x == 0) {
-				System.out.pritln("So nay khong phai so nguyen to");
+				System.out.println("So nay khong phai so nguyen to");
 				return false;
 			}
 			
@@ -23,7 +25,7 @@ public class helloworld{
 	}
 
 	public boolean isPrime3(int n) {
-		int sqrtN = Math.sqrt(n);
+		int sqrtN = (int) Math.sqrt(n);
 		for (int x = 2; x < sqrtN ; x++) {
 			if (n % x == 0) return false;
 		}
@@ -31,7 +33,7 @@ public class helloworld{
 	}
 
 	public boolean isPrime4(int n) {
-		for (int x = Math.sqrt(n); x > 2; x--) {
+		for (int x = (int) Math.sqrt(n); x > 2; x--) {
 			if (n % x == 0) return false;
 		}
 		return true;

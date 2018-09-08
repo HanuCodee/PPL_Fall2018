@@ -1,4 +1,4 @@
-package day1;
+package PPL_Fall2018.Week1.hoapt.day1;
 import java.util.Scanner;
 /**
  * 

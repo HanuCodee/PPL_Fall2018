@@ -70,6 +70,5 @@ public class StringExercise {
 		}
 
 		//8
-		String 
 	}
 }

@@ -1,4 +1,4 @@
-package day1extrahw;
+package PPL_Fall2018.Week1.hoapt.day1extrahw;
 import java.util.Scanner;
 
 public class ex6 {
