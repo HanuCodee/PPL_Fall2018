@@ -1,29 +1,34 @@
 package PPL_Fall2018.Week3.LadyLee;
 
 public class Ex6 {
-	//sai
-	public static void max() {
-		int count = 0;
-		int max = 0;
-		char k = 0;
-		System.out.println("Enter a string: ");
-		String a = Ex1.inputString();
-
-		for (int i = 0; i < a.length(); i++) {
-			count = 1;
-			for (int j = i + 1; j < a.length(); j++) {
-				if (a.charAt(i) == a.charAt(j) && count > max) {
-					max = count;
-					count++;
-				}
-			}
-		}
-		int result = max;
-		System.out.println("Result: " + max);
-
+	public static void main(String[] args) {
+		System.out.println("Enter string: ");
+		String hoa = Ex1.inputString();
+		findMostCommonLetter(hoa);
 	}
 
-	public static void main(String[] args) {
-		max();
+	public static char findMostCommonLetter(String str) {
+		int count = 0;
+		char ch = str.charAt(0);
+		int max = countFrequence(str,  str.charAt(0));
+		for (int i = 0; i< str.length(); i ++){
+			if (countFrequence(str, str.charAt(i) )> max){
+				max = countFrequence(str, str.charAt(i));
+				ch =str.charAt(i);
+			}
+		}
+		return ch;
+	}
+
+	public static int countFrequence(String str, char ch) {
+
+		int count = 0;
+		for (int i = 0; i < str.length(); i++) {
+			if (str.charAt(i) == ch) {
+				count++;
+			}
+		}
+		System.out.println("Times of " + "'" + ch + "'" + " is " + count + '\n');
+		return count;
 	}
 }

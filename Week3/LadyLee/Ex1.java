@@ -13,13 +13,18 @@ public class Ex1 {
 		String str = inputString();
 		System.out.println("Enter a character: ");
 		char ch = (char) inputString().charAt(0);
+		
+		int frequent = Count(str, ch);
+	}
 
+	public static int Count(String strig, char cha) {
 		int count = 0;
-		for (int i = 0; i < str.length(); i++) {
-			if (str.charAt(i) == ch) {
+		for (int i = 0; i < strig.length(); i++) {
+			if (strig.charAt(i) == cha) {
 				count++;
 			}
 		}
-		System.out.println("Times of " + "'" + ch + "'" + " is " + count + '\n');
+		System.out.println("Times of " + "'" + cha + "'" + " is " + count + '\n');
+		return count;
 	}
 }

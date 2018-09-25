@@ -4,12 +4,7 @@ import java.util.Scanner;
 
 public class Ex2 {
 
-	public static boolean Search() {
-		System.out.println("Ex2. Enter a fullname: ");
-		String fullName = Ex1.inputString();
-		System.out.println("Enter a name: ");
-		String name = Ex1.inputString();
-
+	public static boolean search(String fullName, String name) {
 		if (fullName.contains(name)) {
 			return true;
 		} else {
@@ -18,11 +13,13 @@ public class Ex2 {
 	}
 
 	public static void main(String[] args) {
-		if (Search() == true) {
-			System.out.println("Found");
-		} else {
-			System.out.println("Not Found");
-		}
+		System.out.println("Ex2. Enter a fullname: ");
+		String fullName = Ex1.inputString();
+		System.out.println("Enter a name: ");
+		String name = Ex1.inputString();
+		
+		boolean a = search(fullName, name);
+		System.out.println(a);
 	}
 
 }
