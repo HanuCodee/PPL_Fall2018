@@ -1,5 +1,4 @@
 package day3;
-
 import hoa.inputString;
 
 public class ex6 {
@@ -9,23 +8,27 @@ public class ex6 {
 		String hoa = inputString.enterString();
 		findMostCommonLetter(hoa);
 	}
-	public static String findMostCommonLetter(String num) {
-		int count = 0;
-		char[] a = num.toCharArray();
-		for(int i = 0; i < a.length; i++ ) {
-			for(int j = 0; j< a.length; j++) {
-				if(i < j && a[i] == a[j] ) {
-					break;
-				}
-				if(a[i] == a[j]) {
-					count++;
-					
-				}
+	public static char findMostCommonLetter(String str) {
+		//int count = 0;
+		char ch = str.charAt(0);
+		int max = countFrequence(str, str.charAt(0));
+		for (int i = 0; i< str.length(); i ++){
+			if (countFrequence(str, str.charAt(i)) > max){
+				max = countFrequence(str, str.charAt(i)) ;
+				ch =str.charAt(i);
 			}
-			System.out.println("The most common letter "+a[i]+" occur "+count+" times.");	
 		}
-		
-		return num;
+		return ch;
 	}
+	public static int countFrequence(String str, char ch){
 
+		int count = 0;
+		for (int i = 0; i < str.length(); i++) {
+			if (str.charAt(i) == ch) {
+				count++;
+			}
+		}
+		System.out.println("Times of " + "'" + ch + "'" + " is " + count + '\n');
+		return count;
+	}
 }
