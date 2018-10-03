@@ -50,6 +50,13 @@ public class CNhanVien {
 		return luong;
 	}
 
+	public boolean NhieuHon(CNhanVien nv2) {
+		if(this.mSoSP >= nv2.getmSoSP()) {
+			return true;
+		} else {
+			return false;
+		}
+	}
 	private boolean validateSoSP(int msoSP) {
 		if (mSoSP >= 0) {
 			return true;

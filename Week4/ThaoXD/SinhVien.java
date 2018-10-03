@@ -1,6 +1,5 @@
 package PPL_Fall2018.Week4.ThaoXD;
 
-import java.awt.Checkbox;
 import java.util.Scanner;
 
 public class SinhVien {

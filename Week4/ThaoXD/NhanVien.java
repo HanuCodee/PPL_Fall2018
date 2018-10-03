@@ -10,6 +10,17 @@ public class NhanVien {
 		NhanVien nv1 = new NhanVien();
 		NhanVien nv2 = new NhanVien();
 		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Nhap ma nv 1: ");
+		nv1.maNV = sc.nextLine();
+		System.out.println("Nhap so sp 1: ");
+		nv1.soSP = sc.nextInt();
+		sc.nextLine();
+		System.out.println("Nhap ma nv 2: ");
+		nv2.maNV = sc.nextLine();
+		System.out.println("Nhap so sp 2: ");
+		nv2.soSP = sc.nextInt();
+		
 		
 	}
 	public NhanVien() {
@@ -94,6 +105,5 @@ public class NhanVien {
 	public String toString() {
 		return "Customer: {" + maNV + "_" + soSP + getLuong() + getTongKet() + "}";
 	}
-
 	
 }
